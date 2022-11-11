@@ -3,7 +3,10 @@
         {
             "id": 27,
             "barCode": "current",
-            "manufacturer": "09/27/2018",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "name": "Sally Quinn",
             "costPrice": "$19586.23",
             "salePrice": "eebsworth2m@sbwire.com",
@@ -12,66 +15,98 @@
         },
         {
             "id": 61,
-            "manufacturer": "09/23/2016",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "costPrice": "$23896.35",
             "barCode": "professional",
             "name": "Margaret Bowers",
             "salePrice": "kocrevy0@thetimes.co.uk",
-            "description": "Nuclear Power Engineer"
+            "description": "Nuclear Power Engineer",
+            "stockQuantity": 15
         },
         {
             "id": 59,
-            "manufacturer": "10/15/2017",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "name": "Minnie Roy",
             "barCode": "rejected",
             "costPrice": "$18991.67",
             "salePrice": "ediehn6@163.com",
-            "description": "Environmental Specialist"
+            "description": "Environmental Specialist",
+            "stockQuantity": 15
         },
         {
             "id": 30,
-            "manufacturer": "06/12/2018",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "barCode": "resigned",
             "costPrice": "$19252.12",
             "name": "Ralph Leonard",
             "salePrice": "dfalloona@ifeng.com",
-            "description": "Sales Representative"
+            "description": "Sales Representative",
+            "stockQuantity": 15
         },
         {
             "id": 66,
             "barCode": "applied",
-            "manufacturer": "03/24/2018",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "costPrice": "$13076.28",
             "name": "Annie Martin",
             "description": "Operator",
-            "salePrice": "sganderton2@tuttocitta.it"
+            "salePrice": "sganderton2@tuttocitta.it",
+            "stockQuantity": 15
         },
         {
             "id": 33,
-            "manufacturer": "08/25/2017",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "costPrice": "$10909.52",
             "name": "Adeline Day",
             "barCode": "professional",
             "salePrice": "hnisius4@gnu.org",
-            "description": "Senior Cost Accountant"
+            "description": "Senior Cost Accountant",
+            "stockQuantity": 15
         },
         {
             "id": 61,
             "barCode": "current",
-            "manufacturer": "06/01/2017",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "costPrice": "$17803.80",
             "name": "Lora Jackson",
             "description": "Geologist",
-            "salePrice": "ghoneywood5@narod.ru"
+            "salePrice": "ghoneywood5@narod.ru",
+            "stockQuantity": 15
         },
         {
             "id": 22,
-            "manufacturer": "12/03/2017",
+            "manufacturer": {
+                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+                "name": "Nestlê"
+            },
             "costPrice": "$12336.17",
             "name": "Rodney Sharp",
             "barCode": "professional",
             "description": "Cost Accountant",
-            "salePrice": "dcrossman3@google.co.jp"
+            "salePrice": "dcrossman3@google.co.jp",
+            "stockQuantity": 15
         }
-    ]
+    ],
+    "manufacturers": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+        "name": "Nestlê"
+    }
 }

@@ -63,7 +63,7 @@ const ProductsList = () => {
                   </Box>
                 </TableCell>
                 <TableCell>{row.barCode}</TableCell>
-                <TableCell>{row.manufacturer}</TableCell>
+                <TableCell>{row.manufacturer.name}</TableCell>
                 <TableCell>{row.costPrice}</TableCell>
                 <TableCell>{row.salePrice}</TableCell>
                 <TableCell>{row.stockQuantity}</TableCell>

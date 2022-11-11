@@ -1,9 +1,11 @@
-export default interface ProductModel{
+import Manufacturer from "./manufacturer";
+
+export default interface ProductModel {
     id: string;
     name: string;
     description: string;
     barCode: string;
-    manufacturer: string;
+    manufacturer: Manufacturer;
     costPrice: number;
     salePrice: number;
     stockQuantity: 15

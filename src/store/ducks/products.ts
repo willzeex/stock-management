@@ -1,4 +1,4 @@
-import { createAction, createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import ProductModel from 'src/models/products/product-model';
 import getAllProducts from 'src/services/products/product-service'
 import { ProductsState } from '../types';
@@ -9,7 +9,6 @@ const initialState: ProductsState = {
     items: []
 }
 
-// First, create the thunk
 export const fetchAllProducts = createAsyncThunk(
     'products/fetchAllProducts',
     async () => {
@@ -19,15 +18,21 @@ export const fetchAllProducts = createAsyncThunk(
     }
 )
 
-// Then, handle actions in your reducers:
+export const fetchAddProduct = createAsyncThunk(
+    'products/fetchAddProduct',
+    async (product: ProductModel) => {
+        const response = await getAllProducts();
+
+        return response
+    }
+)
+
 const productsSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {
-        // standard reducer logic, with auto-generated action types per reducer
     },
     extraReducers: (builder) => {
-        // Add reducers for additional action types here, and handle loading state as needed
         builder.addCase(fetchAllProducts.fulfilled, (state, action) => {
             state.items = action.payload;
         });
