@@ -1,12 +1,15 @@
-import Manufacturer from "./manufacturer";
+export default class ProductModel {
+    id?: string;
+    name?: string;
+    description?: string;
+    barCode?: string;
+    manufacturer?: ManufacturerModel;
+    costPrice?: number;
+    salePrice?: number;
+    stockQuantity?: number;
+}
 
-export default interface ProductModel {
+interface ManufacturerModel {
     id: string;
-    name: string;
-    description: string;
-    barCode: string;
-    manufacturer: Manufacturer;
-    costPrice: number;
-    salePrice: number;
-    stockQuantity: 15
+    name: string | null;
 }

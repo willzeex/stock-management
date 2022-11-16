@@ -1,112 +1,117 @@
 {
-    "products": [
-        {
-            "id": 27,
-            "barCode": "current",
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "name": "Sally Quinn",
-            "costPrice": "$19586.23",
-            "salePrice": "eebsworth2m@sbwire.com",
-            "description": "Human Resources Assistant",
-            "stockQuantity": 15
-        },
-        {
-            "id": 61,
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "costPrice": "$23896.35",
-            "barCode": "professional",
-            "name": "Margaret Bowers",
-            "salePrice": "kocrevy0@thetimes.co.uk",
-            "description": "Nuclear Power Engineer",
-            "stockQuantity": 15
-        },
-        {
-            "id": 59,
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "name": "Minnie Roy",
-            "barCode": "rejected",
-            "costPrice": "$18991.67",
-            "salePrice": "ediehn6@163.com",
-            "description": "Environmental Specialist",
-            "stockQuantity": 15
-        },
-        {
-            "id": 30,
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "barCode": "resigned",
-            "costPrice": "$19252.12",
-            "name": "Ralph Leonard",
-            "salePrice": "dfalloona@ifeng.com",
-            "description": "Sales Representative",
-            "stockQuantity": 15
-        },
-        {
-            "id": 66,
-            "barCode": "applied",
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "costPrice": "$13076.28",
-            "name": "Annie Martin",
-            "description": "Operator",
-            "salePrice": "sganderton2@tuttocitta.it",
-            "stockQuantity": 15
-        },
-        {
-            "id": 33,
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "costPrice": "$10909.52",
-            "name": "Adeline Day",
-            "barCode": "professional",
-            "salePrice": "hnisius4@gnu.org",
-            "description": "Senior Cost Accountant",
-            "stockQuantity": 15
-        },
-        {
-            "id": 61,
-            "barCode": "current",
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "costPrice": "$17803.80",
-            "name": "Lora Jackson",
-            "description": "Geologist",
-            "salePrice": "ghoneywood5@narod.ru",
-            "stockQuantity": 15
-        },
-        {
-            "id": 22,
-            "manufacturer": {
-                "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
-                "name": "Nestlê"
-            },
-            "costPrice": "$12336.17",
-            "name": "Rodney Sharp",
-            "barCode": "professional",
-            "description": "Cost Accountant",
-            "salePrice": "dcrossman3@google.co.jp",
-            "stockQuantity": 15
-        }
-    ],
-    "manufacturers": {
+  "products": [
+    {
+      "id": "5e1198f2-1a59-4e8e-ad73-6959aebafbd2",
+      "barCode": "01524875965215",
+      "manufacturer": {
         "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
         "name": "Nestlê"
+      },
+      "name": "FÓRMULA INFANTIL APTAMIL PREMIUM 1 400G",
+      "costPrice": "29.45",
+      "salePrice": "35.99",
+      "description": "Human Resources Assistant",
+      "stockQuantity": "10"
+    },
+    {
+      "id": "4e1b92f4-be4a-4b4b-8c97-827c56541dbf",
+      "manufacturer": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+        "name": "Nestlê"
+      },
+      "costPrice": "53.16",
+      "barCode": "3258544445622",
+      "name": "Composto Lácteo Enfagrow",
+      "salePrice": "60",
+      "description": "Nuclear Power Engineer",
+      "stockQuantity": "10"
+    },
+    {
+      "id": "8e79d31f-6315-4802-931a-0bb42aca94b1",
+      "manufacturer": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+        "name": "Nestlê"
+      },
+      "name": "Fórmula Infantil Pregomin 400g",
+      "barCode": "2366665222548",
+      "costPrice": "149.9",
+      "salePrice": "159.9",
+      "description": "Environmental Specialist",
+      "stockQuantity": "3"
+    },
+    {
+      "id": "480f8dad-dc38-4799-9085-62f384f2b70c",
+      "manufacturer": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+        "name": "Nestlê"
+      },
+      "barCode": "0000001255530",
+      "costPrice": "49.99",
+      "name": "Fórmula Infantil Nestogeno 2 800g",
+      "salePrice": "59.99",
+      "description": "Sales Representative",
+      "stockQuantity": "20"
+    },
+    {
+      "id": "db3abfc2-47f9-49c4-9b58-05370d920116",
+      "manufacturer": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+        "name": "Nestlê"
+      },
+      "costPrice": "$12336.17",
+      "name": "FÓRMULA INFANTIL APTAMIL PROFUTURA 1 400G",
+      "barCode": "0325412546521",
+      "description": "Cost Accountant",
+      "salePrice": "dcrossman3@google.co.jp",
+      "stockQuantity": 15
+    },
+    {
+      "id": "852a2be8-6e7d-49da-99b7-6b31913e3dad",
+      "name": "FÓRMULA INFANTIL APTAMIL AR 800G",
+      "description": "",
+      "barCode": "1252362158795",
+      "manufacturer": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151"
+      },
+      "costPrice": "27.99",
+      "salePrice": "40.00",
+      "stockQuantity": "10",
+      "": "Nesnutri 1 a 3 anos"
+    },
+    {
+      "id": "34dace6e-898a-4832-97a9-97e5e4e04d45",
+      "name": "Nutren Kids Morango",
+      "description": "",
+      "barCode": "7891000089873",
+      "manufacturer": {
+        "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+        "name": "Nestlê"
+      },
+      "costPrice": "26.9",
+      "salePrice": "36.9",
+      "stockQuantity": "5"
+    },
+    {
+      "id": "a5eb3cea-51de-46b8-800c-b42061f0f4be",
+      "name": "Fórmula Infantil NANLAC Comfor 800g",
+      "barCode": "7986325550001",
+      "manufacturer": {
+        "id": "53bd1559-75de-4cb8-b2fe-419b4e313fce",
+        "name": "Lacta"
+      },
+      "costPrice": "58.99",
+      "salePrice": "65.99",
+      "stockQuantity": "5"
     }
+  ],
+  "manufacturers": [
+    {
+      "id": "73c8a027-9568-4f9b-a9f1-6f1297667151",
+      "name": "Nestlê"
+    },
+    {
+      "id": "53bd1559-75de-4cb8-b2fe-419b4e313fce",
+      "name": "Lacta"
+    }
+  ]
 }
