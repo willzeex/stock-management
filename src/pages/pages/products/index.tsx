@@ -10,7 +10,6 @@ import Typography from '@mui/material/Typography'
 import TableContainer from '@mui/material/TableContainer'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit'
-// ** Types Imports
 import ProductModel from 'src/models/products/product-model'
 import { fetchAddProduct, fetchAllProducts, fetchDeleteProduct, fetchUpdateProduct } from 'src/store/ducks/products'
 import { useAppDispatch, useAppSelector } from 'src/@core/hooks/useRedux'
@@ -23,7 +22,6 @@ import {
   DialogTitle,
   FormControl,
   Grid,
-  Icon,
   InputLabel,
   Link,
   MenuItem,
@@ -47,8 +45,8 @@ const ProductsList = () => {
   const [product, setProduct] = React.useState<ProductModel>(new ProductModel());
 
   const handleChange = (event: SelectChangeEvent) => {
-    let manufacturerId = event.target.value
-    let manufacturer = manufacturers?.find(m => m.id === manufacturerId);
+    const manufacturerId = event.target.value
+    const manufacturer = manufacturers?.find(m => m.id === manufacturerId);
     setProduct({ ...product, [event.target.name]: manufacturer });
   };
 
