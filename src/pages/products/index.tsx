@@ -10,6 +10,11 @@ import Typography from '@mui/material/Typography'
 import TableContainer from '@mui/material/TableContainer'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit'
+<<<<<<< Updated upstream:src/pages/pages/products/index.tsx
+=======
+
+// ** Types Imports
+>>>>>>> Stashed changes:src/pages/products/index.tsx
 import ProductModel from 'src/models/products/product-model'
 import { fetchAddProduct, fetchAllProducts, fetchDeleteProduct, fetchUpdateProduct } from 'src/store/ducks/products'
 import { useAppDispatch, useAppSelector } from 'src/@core/hooks/useRedux'
@@ -106,7 +111,7 @@ const ProductsList = () => {
 
         <Typography variant='body2'>Consulte, cadastre ou edite seus produtos.</Typography>
       </Grid>
-      <Grid item xs={3} justifyContent="flex-end" alignItems="flex-start" >
+      <Grid item xs={3} justifyContent="flex-end" alignItems="flex-start" sx={{ textAlign: 'right' }} >
         <Button size='large' type='submit' variant='outlined' onClick={handleClickOpen}>
           Adicionar
         </Button>
@@ -181,15 +186,15 @@ const ProductsList = () => {
             </FormControl>
 
             <FormControl variant="standard" fullWidth>
-              <TextField margin="dense" name="costPrice" label="Preço de custo" type="number" fullWidth variant="standard" onChange={onChange} />
+              <TextField margin="dense" name="costPrice" label="Preço de custo" type="number" value={product.costPrice} fullWidth variant="standard" onChange={onChange} />
             </FormControl>
 
             <FormControl variant="standard" fullWidth>
-              <TextField margin="dense" name="salePrice" label="Valor de revenda" type="number" fullWidth variant="standard" onChange={onChange} />
+              <TextField margin="dense" name="salePrice" label="Valor de revenda" type="number" value={product.salePrice} fullWidth variant="standard" onChange={onChange} />
             </FormControl>
 
             <FormControl variant="standard" fullWidth>
-              <TextField margin="dense" name="stockQuantity" label="Quantidade em estoque" type="number" fullWidth variant="standard" onChange={onChange} />
+              <TextField margin="dense" name="stockQuantity" label="Quantidade em estoque" type="number" value={product.stockQuantity} fullWidth variant="standard" onChange={onChange} />
             </FormControl>
           </DialogContent>
           <DialogActions>

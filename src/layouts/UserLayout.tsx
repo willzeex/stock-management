@@ -43,7 +43,6 @@ const UserLayout = ({ children }: Props) => {
       settings={settings}
       saveSettings={saveSettings}
       verticalNavItems={VerticalNavItems()} // Navigation Items
-      // afterVerticalNavMenuContent={UpgradeToProImg}
       verticalAppBarContent={(
         props // AppBar Content
       ) => (
