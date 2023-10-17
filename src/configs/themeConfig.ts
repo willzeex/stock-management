@@ -17,9 +17,9 @@ type ThemeConfig = {
 
 const themeConfig: ThemeConfig = {
   // ** Layout Configs
-  templateName: 'My-Stock' /* App Name */,
-  mode: 'dark' /* light | dark */,
-  contentWidth: 'full' /* full | boxed */,
+  templateName: 'Materio' /* App Name */,
+  mode: 'light' /* light | dark */,
+  contentWidth: 'boxed' /* full | boxed */,
 
   // ** Routing Configs
   routingLoader: true /* true | false */,

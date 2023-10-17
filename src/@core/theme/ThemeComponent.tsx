@@ -21,7 +21,6 @@ import themeOptions from './ThemeOptions'
 
 // ** Global Styles
 import GlobalStyling from './globalStyles'
-import { store } from 'src/store'
 
 interface Props {
   settings: Settings

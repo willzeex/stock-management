@@ -21,9 +21,17 @@ const navigation = (): VerticalNavItemsType => {
       path: '/'
     },
     {
-      title: 'Products',
+      title: 'Produtos',
       icon: HomeOutline,
-      path: '/pages/products'
+      path: '/products'
+    },
+    {
+      title: 'Fabricantes',
+      icon: HomeOutline,
+      path: '/manufacturers'
+    },
+    {
+      sectionTitle: 'Configurações'
     },
     {
       title: 'Account Settings',
@@ -50,9 +58,6 @@ const navigation = (): VerticalNavItemsType => {
       icon: AlertCircleOutline,
       path: '/pages/error',
       openInNewTab: true
-    },
-    {
-      sectionTitle: 'User Interface'
     },
     {
       title: 'Typography',
