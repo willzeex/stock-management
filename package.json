@@ -1,39 +1,22 @@
 {
-  "name": "materio-mui-react-nextjs-admin-template-free",
-  "description": "Most Powerful & Comprehensive Free MUI React NextJS Admin Dashboard Template built for developers! 🚀",
+  "name": "no-azul",
+  "description": "A melhor plataforma de gestão financeira pessoaldo Brasil! 🚀",
   "license": "MIT",
   "version": "1.0.0",
   "author": {
-    "name": "ThemeSelection",
-    "url": "https://themeselection.com/"
+    "name": "Faility IT Solutions",
+    "url": "https://facilityitsolutions.com.br"
   },
-  "bugs": {
-    "url": "https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free/issues"
-  },
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free.git"
+    "url": "https://github.com/willzeex/stock-management.git"
   },
-  "homepage": "https://themeselection.com/products/materio-free-mui-react-nextjs-admin-template/",
+  "homepage": "",
   "keywords": [
-    "react",
-    "javascript",
-    "admin",
-    "typescript",
-    "dashboard",
-    "material-design",
-    "nextjs",
-    "material-ui",
-    "admin-dashboard",
-    "free",
-    "mui",
-    "admin-template",
-    "admin-panel",
-    "freebies",
-    "nextjs-template",
-    "react-dashboard",
-    "themeselection"
+    "finanças",
+    "gestão financeira",
+    "contas a pagar"
   ],
   "scripts": {
     "dev": "next dev",
@@ -58,6 +41,7 @@
     "axios": "^1.1.3",
     "clsx": "^1.1.1",
     "json-server": "^0.17.1",
+    "jwt-decode": "^4.0.0",
     "mdi-material-ui": "^7.1.0",
     "next": "12.0.4",
     "nprogress": "^0.2.0",
