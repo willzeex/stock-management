@@ -119,13 +119,13 @@ const Navigation = (props: Props) => {
           containerRef={(ref: any) => handleInfiniteScroll(ref)}
           {...(hidden
             ? {
-                onScroll: (container: any) => scrollMenu(container),
-                sx: { height: '100%', overflowY: 'auto', overflowX: 'hidden' }
-              }
+              onScroll: (container: any) => scrollMenu(container),
+              sx: { height: '100%', overflowY: 'auto', overflowX: 'hidden' }
+            }
             : {
-                options: { wheelPropagation: false },
-                onScrollY: (container: any) => scrollMenu(container)
-              })}
+              options: { wheelPropagation: false },
+              onScrollY: (container: any) => scrollMenu(container)
+            })}
         >
           {beforeVerticalNavMenuContent ? beforeVerticalNavMenuContent(props) : null}
           <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>

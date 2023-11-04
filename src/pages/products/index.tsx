@@ -10,11 +10,6 @@ import Typography from '@mui/material/Typography'
 import TableContainer from '@mui/material/TableContainer'
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit'
-<<<<<<< Updated upstream:src/pages/pages/products/index.tsx
-=======
-
-// ** Types Imports
->>>>>>> Stashed changes:src/pages/products/index.tsx
 import ProductModel from 'src/models/products/product-model'
 import { fetchAddProduct, fetchAllProducts, fetchDeleteProduct, fetchUpdateProduct } from 'src/store/ducks/products'
 import { useAppDispatch, useAppSelector } from 'src/@core/hooks/useRedux'

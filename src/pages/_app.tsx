@@ -31,6 +31,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css'
 import '../../styles/globals.css'
 import { store } from 'src/store'
 import { Provider } from 'react-redux'
+import { AuthProvider } from 'src/context/AuthContext'
 
 // ** Extend App Props with Emotion
 type ExtendedAppProps = AppProps & {
@@ -63,24 +64,26 @@ const App = (props: ExtendedAppProps) => {
   return (
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
-      <Head>
-        <title>{`${themeConfig.templateName}`}</title>
-        <meta
-          name='description'
-          content={`${themeConfig.templateName}`}
-        />
-        <meta name='keywords' content='' />
-        <meta name='viewport' content='' />
-      </Head>
+        <Head>
+          <title>{`${themeConfig.templateName}`}</title>
+          <meta
+            name='description'
+            content={`${themeConfig.templateName}`}
+          />
+          <meta name='keywords' content='' />
+          <meta name='viewport' content='' />
+        </Head>
 
-      <SettingsProvider>
-        <SettingsConsumer>
-          {({ settings }) => {
-            return <ThemeComponent settings={settings}>{getLayout(<Component {...pageProps} />)}</ThemeComponent>
-          }}
-        </SettingsConsumer>
-      </SettingsProvider>
-    </CacheProvider>
+        <SettingsProvider>
+          <AuthProvider>
+            <SettingsConsumer>
+              {({ settings }) => {
+                return <ThemeComponent settings={settings}>{getLayout(<Component {...pageProps} />)}</ThemeComponent>
+              }}
+            </SettingsConsumer>
+          </AuthProvider>
+        </SettingsProvider>
+      </CacheProvider>
     </Provider>
   )
 }
