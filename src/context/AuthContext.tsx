@@ -65,7 +65,6 @@ export const AuthProvider: React.FC = ({ children }) => {
                 router.push('/');
             }
         } catch (error) {
-            console.log(error);
         }
     }
 
