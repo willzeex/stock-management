@@ -6,12 +6,13 @@ import { AuthResponseModel } from 'src/models/auth/auth-response-model';
 import axios from 'axios';
 import { ApiResponseModel } from 'src/models/shared/api-response-model';
 import { jwtDecode } from 'jwt-decode'
+import { UserModel } from 'src/models/auth/user-model';
 
 export interface AuthContextData {
     signed: boolean;
     user: object | null;
-    Login(user: object): Promise<void>;
-    Logout(): void;
+    login(user: object): Promise<void>;
+    logout(): void;
 }
 
 export const AuthContext = createContext<AuthContextData>({} as AuthContextData);
@@ -27,8 +28,6 @@ export const AuthProvider: React.FC = ({ children }) => {
     });
 
     useEffect(() => {
-        if (!user) router.push('/pages/login');
-
         const storagedUser = sessionStorage.getItem('@App:user');
         const storagedToken = sessionStorage.getItem('@App:token');
 
@@ -36,9 +35,11 @@ export const AuthProvider: React.FC = ({ children }) => {
             setUser(JSON.parse(storagedUser));
             api.defaults.headers.Authorization = `Bearer ${storagedToken}`;
         }
+
+        if (!user) router.push('/pages/login');
     }, []);
 
-    async function Login(userData: any) {
+    async function login(userData: any) {
         try {
             const defaults = {
                 headers: {
@@ -48,17 +49,18 @@ export const AuthProvider: React.FC = ({ children }) => {
                 },
             };
 
-            const response = await authApi.post<ApiResponseModel<AuthResponseModel>>('/authenticate', { email: userData.email, password: userData.password }, defaults);
+            const response = await authApi.post<ApiResponseModel<AuthResponseModel>>('/login', { email: userData.email, password: userData.password }, defaults);
 
             if (response.data.error) {
                 console.log(response.data.error)
             } else {
-                const jwtToken = response.data.result.jwtToken;
+                const jwtToken = response.data.result.accessToken;
 
                 api.defaults.headers.Authorization = `Bearer ${jwtToken}`;
 
                 sessionStorage.setItem('@App:user', JSON.stringify(jwtDecode(jwtToken)));
                 sessionStorage.setItem('@App:token', jwtToken);
+                setUser(user);
 
                 router.push('/');
             }
@@ -67,7 +69,7 @@ export const AuthProvider: React.FC = ({ children }) => {
         }
     }
 
-    function Logout() {
+    const logout = () => {
         setUser(null);
         sessionStorage.removeItem('@App:user');
         sessionStorage.removeItem('@App:token');
@@ -76,9 +78,11 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     return (
         <AuthContext.Provider
-            value={{ signed: Boolean(user), user, Login, Logout }}
+            value={{ signed: Boolean(user), user, login, logout }}
         >
             {children}
         </AuthContext.Provider>
     );
 };
+
+export const AuthConsumer = AuthContext.Consumer

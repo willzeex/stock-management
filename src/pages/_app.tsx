@@ -73,16 +73,15 @@ const App = (props: ExtendedAppProps) => {
           <meta name='keywords' content='' />
           <meta name='viewport' content='' />
         </Head>
-
-        <SettingsProvider>
-          <AuthProvider>
+        <AuthProvider>
+          <SettingsProvider>
             <SettingsConsumer>
               {({ settings }) => {
                 return <ThemeComponent settings={settings}>{getLayout(<Component {...pageProps} />)}</ThemeComponent>
               }}
             </SettingsConsumer>
-          </AuthProvider>
-        </SettingsProvider>
+          </SettingsProvider>
+        </AuthProvider>
       </CacheProvider>
     </Provider>
   )

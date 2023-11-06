@@ -34,7 +34,7 @@ const UserDropdown = () => {
 
   // ** Hooks
   const router = useRouter();
-  const auth = useAuth();
+  const { logout } = useAuth();
 
   const handleDropdownOpen = (event: SyntheticEvent) => {
     setAnchorEl(event.currentTarget)
@@ -47,8 +47,8 @@ const UserDropdown = () => {
     setAnchorEl(null)
   }
 
-  const handlelogout = () => {
-    auth.Logout();
+  function handlelogout() {
+    logout();
   }
 
   const styles = {
@@ -112,13 +112,13 @@ const UserDropdown = () => {
         <MenuItem sx={{ p: 0 }} onClick={() => handleDropdownClose()}>
           <Box sx={styles}>
             <CogOutline sx={{ marginRight: 2 }} />
-            Settings
+            Configurações
           </Box>
         </MenuItem>
 
         <MenuItem sx={{ py: 2 }} onClick={handlelogout}>
           <LogoutVariant sx={{ marginRight: 2, fontSize: '1.375rem', color: 'text.secondary' }} />
-          Logout
+          Sair
         </MenuItem>
       </Menu>
     </Fragment>

@@ -16,19 +16,16 @@ import { VerticalNavItemsType } from 'src/@core/layouts/types'
 const navigation = (): VerticalNavItemsType => {
   return [
     {
-      auth: true,
       title: 'Dashboard',
       icon: HomeOutline,
       path: '/'
     },
     {
-      auth: true,
       title: 'Produtos',
       icon: HomeOutline,
       path: '/products'
     },
     {
-      auth: true,
       title: 'Fabricantes',
       icon: HomeOutline,
       path: '/manufacturers'
@@ -37,7 +34,6 @@ const navigation = (): VerticalNavItemsType => {
       sectionTitle: 'Configurações'
     },
     {
-      auth: true,
       title: 'Account Settings',
       icon: AccountCogOutline,
       path: '/account-settings'
@@ -46,14 +42,12 @@ const navigation = (): VerticalNavItemsType => {
       sectionTitle: 'Pages'
     },
     {
-      auth: false,
       title: 'Login',
       icon: Login,
       path: '/pages/login',
       openInNewTab: true
     },
     {
-      auth: false,
       title: 'Register',
       icon: AccountPlusOutline,
       path: '/pages/register',

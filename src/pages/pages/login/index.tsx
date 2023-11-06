@@ -38,6 +38,7 @@ import BlankLayout from 'src/@core/layouts/BlankLayout'
 // ** Demo Imports
 import FooterIllustrationsV1 from 'src/views/pages/auth/FooterIllustration'
 import { useAuth } from 'src/@core/hooks/useAuth'
+import { useRouter } from 'next/router'
 
 interface State {
   email: string
@@ -73,7 +74,11 @@ const LoginPage = () => {
 
   // ** Hook
   const theme = useTheme()
-  const { signed, Login } = useAuth();
+  const router = useRouter();
+  const { signed, login } = useAuth();
+
+  if (signed)
+    router.push("/");
 
   const handleChange = (prop: keyof State) => (event: ChangeEvent<HTMLInputElement>) => {
     setValues({ ...values, [prop]: event.target.value })
@@ -88,13 +93,11 @@ const LoginPage = () => {
   }
 
   async function handleLogin() {
-    await Login({
+    await login({
       email: values.email,
       password: values.password
     });
   }
-
-  console.log(signed);
 
   return (
     <Box className='content-center'>
