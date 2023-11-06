@@ -5,8 +5,6 @@ import { useRouter } from 'next/router';
 import { AuthResponseModel } from 'src/models/auth/auth-response-model';
 import axios from 'axios';
 import { ApiResponseModel } from 'src/models/shared/api-response-model';
-import { jwtDecode } from 'jwt-decode'
-import { UserModel } from 'src/models/auth/user-model';
 
 export interface AuthContextData {
     signed: boolean;
@@ -58,7 +56,7 @@ export const AuthProvider: React.FC = ({ children }) => {
 
                 api.defaults.headers.Authorization = `Bearer ${jwtToken}`;
 
-                sessionStorage.setItem('@App:user', JSON.stringify(jwtDecode(jwtToken)));
+                sessionStorage.setItem('@App:user', JSON.stringify(jwtToken));
                 sessionStorage.setItem('@App:token', jwtToken);
                 setUser(user);
 
